@@ -49,22 +49,22 @@ export const SideBar = () => {
             </NavLink>
           </li>
           <li>
-            <a href="#" className={styles.link}>
+            <NavLink to="/alerts" className={styles.link}>
               <TbAlertTriangle size={20} />
               Alerts
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className={styles.link}>
+            <NavLink to="/cases" className={styles.link}>
               <TbFileSearch size={20} />
               Cases
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className={styles.link}>
+            <NavLink to="/reports" className={styles.link}>
               <TbReport size={20} />
               Reports
-            </a>
+            </NavLink>
           </li>
         </ul>
       </div>
@@ -73,16 +73,16 @@ export const SideBar = () => {
         <p>General</p>
         <ul className="space-y-2">
           <li>
-            <a href="#" className={styles.link}>
+            <NavLink to="/settings" className={styles.link}>
               <IoIosSettings size={20} />
               <span>Settings</span>
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className={styles.link}>
+            <NavLink to="/help" className={styles.link}>
               <IoIosHelpCircleOutline size={20} />
               Help
-            </a>
+            </NavLink>
           </li>
           <li>
             <a href="#" className={styles.link}>

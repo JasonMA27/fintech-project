@@ -3,6 +3,11 @@ import NavBar from "./components/NavBar";
 import { SideBar } from "./components/SideBar";
 import { Route, Routes } from "react-router";
 import Transactions from "./components/Transactions";
+import Alerts from "./components/Alerts";
+import Cases from "./components/Cases";
+import Reports from "./components/Reports";
+import Help from "./components/Help";
+import Settings from "./components/Settings";
 
 function App() {
   return (
@@ -16,6 +21,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/transactions" element={<Transactions />} />
+            <Route path="/alerts" element={<Alerts />} />
+            <Route path="/cases" element={<Cases />} />
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/help" element={<Help />} />
           </Routes>
         </main>
       </div>
