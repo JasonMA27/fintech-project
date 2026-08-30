@@ -12,7 +12,7 @@ function NavBar() {
     setMenuOpen(!isMenuOpen);
   };
   return (
-    <nav className=" bg-green-800 p-3 text-white rounded-xl">
+    <nav className=" bg-green-800 p-2 text-white rounded-xl">
       <div className="flex justify-end-safe items-center mx-auto container">
         {/* navbar for large screens */}
         <ul className="md:flex space-x-6 hidden">

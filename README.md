@@ -25,3 +25,5 @@ React and TypeScript dashboard UI that helps monitor financial fraud risk along 
             -TypeScript
             -Tailwind css
             -Vite
+
+            
