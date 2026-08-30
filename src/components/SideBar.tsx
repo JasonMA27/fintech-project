@@ -8,6 +8,8 @@ import {
 } from "react-icons/tb";
 import { GrTransaction } from "react-icons/gr";
 
+import { NavLink } from "react-router";
+
 const styles = {
   link: "flex items-center gap-2 hover:bg-white hover:text-slate-800 px-2 py-1 rounded-md transition-colors duration-300",
 };
@@ -16,7 +18,11 @@ export const SideBar = () => {
   return (
     <nav className="h-full overflow-y-auto p-2 rounded-2xl bg-blue-600 text-white w-48 shrink-0">
       <div>
-      <img src="src/assets/longLogo.png" alt="" className="w-36 p-1 ml-5 rounded" />
+        <img
+          src="src/assets/longLogo.png"
+          alt=""
+          className="w-36 p-1 ml-5 rounded"
+        />
       </div>
       <div className="border-b mb-4 mt-2 pb-4 border-stone-300">
         <button className="flex p-0.5 hover:bg-stone-200 rounded transition-colors relative gap-2 w-full items-center">
@@ -31,16 +37,16 @@ export const SideBar = () => {
         <p>Menu</p>
         <ul className="space-y-2">
           <li>
-            <a href="#" className={styles.link}>
+            <NavLink to="/" className={styles.link}>
               <TbLayoutDashboardFilled size={20} />
               Dashboard
-            </a>
+            </NavLink>
           </li>
           <li>
-            <a href="#" className={styles.link}>
+            <NavLink to="/transactions" className={styles.link}>
               <GrTransaction size={20} />
               Transactions
-            </a>
+            </NavLink>
           </li>
           <li>
             <a href="#" className={styles.link}>
